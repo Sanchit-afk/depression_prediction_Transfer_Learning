@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>LET IT GO!</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">  
+ <meta name="description" content="Dr PRO template project">> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/bootstrap-4.1.2/bootstrap.min.css') }}" />
+<link href="{{ url_for('static', filename='plugins/font-awesome-4.7.0/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='plugins/OwlCarousel2-2.2.1/owl.carousel.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='plugins/OwlCarousel2-2.2.1/owl.theme.default.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='plugins/OwlCarousel2-2.2.1/animate.css') }}" />
+<link href="{{ url_for('static', filename='plugins/jquery-datepicker/jquery-ui.css') }}" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main_styles.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/responsive.css') }}" />
+
+<!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/') }}" /> -->
+
+</head>
+<body>
+
+<div class="super_container">
+	
+	<!-- Header -->
+
+	<header class="header trans_400">
+		<div class="header_content d-flex flex-row align-items-center jusity-content-start trans_400">
+
+			<!-- Logo -->
+			<div class="logo">
+				<a href="{{ url_for('index') }}"">
+					<div><span>LET IT GO</span></div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Let's fight Depression!</div>
+				</a>
+			</div>
+
+			<!-- Main Navigation -->
+			<nav class="main_nav">
+				<ul class="d-flex flex-row align-items-center justify-content-start">
+					<li class="active"><a href="{{ url_for('index') }}">Home</a></li>
+					<li><a href="{{ url_for('about') }}">About us</a></li>
+					<li><a href="{{ url_for('help') }}">Help</a></li>
+					<!-- <li><a href="{{ url_for('quiz') }}">Assessment</a></li> -->
+					<li><a href="{{ url_for('contact') }}">Contact</a></li>
+					
+				</ul>
+			</nav>
+			<div class="header_extra d-flex flex-row align-items-center justify-content-end ml-auto">
+				
+				<!-- Work Hourse -->
+				<div class="work_hours">Mo - Sat: 8:00am - 9:00pm</div>
+
+				<!-- Header Phone -->
+				<!-- <div class="header_phone">+34 586 778 8892</div> -->
+
+				<!-- Appointment Button -->
+				<!-- <div class="button button_1 header_button"><a href="#">Make an Appointment</a></div> -->
+
+				<!-- Header Social -->
+				<div class="social header_social">
+					<ul class="d-flex flex-row align-items-center justify-content-start">
+						<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+
+				<!-- Hamburger -->
+				<div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
+			</div>
+		</div>
+	</header>
+
+	<div class="intro">
+		<div class="container">
+			<div class="row">
+
+				<!-- Intro Content -->
+				<div class="col-lg-6 intro_col">
+					<div class="intro_content">
+						<div class="section_title_container">
+							<div class="section_subtitle"></div>
+							<div class="section_title"><h2>What your answers suggest?</h2></div>
+						</div>
+						<div class="intro_text">
+							<h5>The answers given by you to the questionaire {{predict}} of depression.</h5>
+						</div>
+
+					</div>
+				</div>
+
+				<!-- Intro Form -->
+				<div class="col-lg-6 intro_col">
+					<img src="static/result.jpg" height="450" width="800">
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+    <div class="cta">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="cta_container d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start">
+						<div class="cta_content">
+							<div class="cta_title">Reach Out For Help</div>
+							<div class="cta_text">It's never late to ask for help!</div>
+						</div>
+						<div class="cta_phone ml-lg-auto"><a href="{{ url_for('help') }}">Help</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="footer_content">
+			<div class="container">
+				<div class="row">
+
+					<!-- Footer About -->
+					<div class="col-lg-3 footer_col">
+						<div class="footer_about">
+							<div class="footer_logo">
+								<a href="{{ url_for('index') }}">
+									<div><span>LET IT GO</span></div>
+									<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Let's fight Depression!</div>
+								</a>
+							</div>
+							<div class="footer_about_text">
+								<p style="text-align: justify;">Sometimes, life will kick you around, but sooner or later, you realize you’re not just a survivor. You’re a warrior, and you’re stronger than anything life throws your way.</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Footer Contact Info -->
+					<div class="col-lg-3 footer_col">
+						<div class="footer_contact">
+							<div class="footer_title">Helpline</div>
+							<ul class="contact_list">
+								<li>011 4119 8666</li>
+								<li>080 2572 2573</li>
+								<li>080 2365 5557</li>
+								<li>011 2338 9090</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Footer Locations -->
+					<div class="col-lg-3 footer_col">
+						<div class="footer_location">
+							<div class="footer_title">Online Support</div>
+							<ul class="locations_list">
+								<li>
+									<a href="http://www.seraniti.com/" onMouseOver="this.style.color='#57ccc3'"onMouseOut="this.style.color='#878787'" ><div class="location_title">Seraniti</div></a>
+									
+								</li>
+								<li>
+									<a href="https://www.hopenetwork.in/" onMouseOver="this.style.color='#57ccc3'"onMouseOut="this.style.color='#878787'" ><div class="location_title">Hope Network</div></a>
+									
+								</li>
+								<li>
+									<a href="https://www.7cups.com/?correlationId=ae973b38-6a0a-47b6-a0e8-e6dbcf81a36c" onMouseOver="this.style.color='#57ccc3'"onMouseOut="this.style.color='#878787'" ><div class="location_title">7 Cups</div></a>
+									
+								</li>
+								<li>
+									<a href="https://www.dbsalliance.org/support/chapters-and-support-groups/online-support-groups/" onMouseOver="this.style.color='#57ccc3'"onMouseOut="this.style.color='#878787'" ><div class="location_title">DBSA</div></a>
+									
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<script src="{{ url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+<script src="{{ url_for('static', filename='styles/bootstrap-4.1.2/popper.js') }}"></script>
+<script src="{{ url_for('static', filename='styles/bootstrap-4.1.2/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/greensock/TweenMax.min.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/greensock/TimelineMax.min.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/scrollmagic/ScrollMagic.min.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/greensock/animation.gsap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/greensock/ScrollToPlugin.min.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/OwlCarousel2-2.2.1/owl.carousel.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/easing/easing.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/parallax-js-master/parallax.min.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/jquery-datepicker/jquery-ui.js') }}"></script>
+<script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>About</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Dr PRO template project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/bootstrap-4.1.2/bootstrap.min.css') }}">
+<link href="{{ url_for('static', filename='plugins/font-awesome-4.7.0/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='plugins/OwlCarousel2-2.2.1/owl.carousel.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='plugins/OwlCarousel2-2.2.1/owl.theme.default.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='plugins/OwlCarousel2-2.2.1/animate.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/about.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/about_responsive.css') }}">
+</head>
+<body>
+
+<div class="super_container">
+	
+	<!-- Header -->
+
+	<header class="header trans_400">
+		<div class="header_content d-flex flex-row align-items-center jusity-content-start trans_400">
+
+			<!-- Logo -->
+			<div class="logo">
+				<a href="{{ url_for('index') }}">
+					<div><span>LET IT GO</span></div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Let's fight Depression!</div>
+				</a>
+			</div>
+
+			<!-- Main Navigation -->
+			<nav class="main_nav">
+				<ul class="d-flex flex-row align-items-center justify-content-start">
+					<li><a href="{{ url_for('index') }}">Home</a></li>
+					<li class="active"><a href="{{ url_for('about') }}">About us</a></li>
+					<li><a href="{{ url_for('help') }}">Help</a></li>
+					<!-- <li><a href="blog.html">News</a></li> -->
+					<li><a href="{{ url_for('contact') }}">Contact</a></li>
+					<li><a href="{{ url_for('examp') }}">Questionnaire</a></li>
+				</ul>
+			</nav>
+			<div class="header_extra d-flex flex-row align-items-center justify-content-end ml-auto">
+				
+				<!-- Work Hourse -->
+				<div class="work_hours">Mo - Sat: 8:00am - 9:00pm</div>
+
+				<!-- Header Phone -->
+				<!-- <div class="header_phone">+34 586 778 8892</div> -->
+
+				<!-- Appointment Button -->
+				<!-- <div class="button button_1 header_button"><a href="#">Make an Appointment</a></div> -->
+
+				<!-- Header Social -->
+				<div class="social header_social">
+					<ul class="d-flex flex-row align-items-center justify-content-start">
+						<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+
+				<!-- Hamburger -->
+				<div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Menu -->
+
+	<div class="menu_overlay trans_400"></div>
+	<div class="menu trans_400">
+		<div class="menu_close_container"><div class="menu_close"><div></div><div></div></div></div>
+		<nav class="menu_nav">
+			<ul>
+				<li><a href="{{ url_for('index') }}">Home</a></li>
+					<li class="active"><a href="{{ url_for('about') }}">About us</a></li>
+					<li><a href="{{ url_for('help') }}">Help</a></li>
+					<!-- <li><a href="blog.html">News</a></li> -->
+					<li><a href="{{ url_for('contact') }}">Contact</a></li>
+					<li><a href="{{ url_for('login') }}">Login</a></li>
+			</ul>
+		</nav>
+		<div class="menu_extra">
+			<div class="menu_link">Mo - Sat: 8:00am - 9:00pm</div>
+			<div class="menu_link">+34 586 778 8892</div>
+			<div class="menu_link"><a href="#">Make an appointment</a></div>
+		</div>
+		<div class="social menu_social">
+			<ul class="d-flex flex-row align-items-center justify-content-start">
+				<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Home -->
+
+	<div class="home d-flex flex-column align-items-start justify-content-end">
+		<!-- <div class="background_image" style="background-image:url(images/about.jpg)"></div> -->
+		<!-- <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="static/about_us.jpg" data-speed="0.8" style="height: 650px;"></div> -->
+		<div class="parallax_background parallax-window" data-parallax="scroll"><img src="static/about_us.jpg" data-speed="0.8" style="height: 650px;"></div>
+
+		<div class="home_overlay"><img src="static/home_overlay.png" alt=""></div>
+		<div class="home_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="home_content">
+							<div class="home_title"></div>
+							<div class="home_text"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Intro -->
+
+	<div class="intro">
+		<div class="container">
+			<div class="row">
+
+				<!-- Intro Content -->
+				<div class="col-lg-8">
+					<div class="intro_content">
+						<div class="section_title_container">
+							<div class="section_subtitle">LET IT GO</div>
+							<div class="section_title"><h2>Know more about us!</h2></div>
+						</div>
+						<div class="intro_text" style="text-align: justify;">
+							<p>Depression is a common and serious medical illness that negatively affects how you feel, the way you think and how you act. Due to the complexity of the traditional techniques based on clinical diagnosis, there is a need for an automatic detection system of depression. Hence the idea led to the development of "LET IT GO"</p>
+						</div>
+
+						<!-- Milestones -->
+						 <div class="milestones">
+						 	<span style="color: #57ccc3; font-weight: 100; font-size: 30px;"><a href="{{ url_for('quiz') }}">Click here to attempt the assessment</span></a>
+							<!--<div class="row milestones_row">
+							
+								
+								<div class="col-md-3 milestone_col">
+									<div class="milestone">
+										<div class="milestone_counter" data-end-value="5000" data-sign-before="+">0</div>
+										<div class="milestone_text">Satisfied Patients</div>
+									</div>
+								</div>
+
+								
+								<div class="col-md-3 milestone_col">
+									<div class="milestone">
+										<div class="milestone_counter" data-end-value="352">0</div>
+										<div class="milestone_text">Face Liftings</div>
+									</div>
+								</div>
+
+								
+								<div class="col-md-3 milestone_col">
+									<div class="milestone">
+										<div class="milestone_counter" data-end-value="718">0</div>
+										<div class="milestone_text">Injectibles</div>
+									</div>
+								</div>
+
+								
+								<div class="col-md-3 milestone_col">
+									<div class="milestone">
+										<div class="milestone_counter" data-end-value="5">0</div>
+										<div class="milestone_text">Awards Won</div>
+									</div>
+								</div>
+
+							</div> -->
+						</div> 
+
+					</div>
+				</div>
+
+				<!-- Intro Image -->
+				<div class="col-lg-3 offset-lg-1">
+					<div class="intro_image"><img src="static/mental.jpg" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Testimonials -->
+
+	<div class="testimonials">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title_container text-center">
+						<div class="section_title"><h2>You are not alone</h2></div>
+						<div class="section_subtitle">Let's see what famous personalities have to say about their journey through depression</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="row testimonials_row">
+				<div class="col">
+					<div class="quote d-flex flex-column align-items-center justify-content-center ml-auto mr-auto"><img src="static/quote.png" alt=""></div>
+
+					<!-- Testimonials Slider -->
+					<div class="test_slider_container">
+						<div class="owl-carousel owl-theme test_slider">
+							
+							<!-- Slide -->
+							<div class="owl-item">
+								<div class="test_item text-center">
+									<div class="test_text">
+										<p>It’s what I woke up to and went to sleep to. I was an addict, and it felt like I was seeing things I didn’t want to see. I think it's less scary when you talk about it. I think I had a moment where I felt different, like, 'Why do I react this way?', 'Why do I feel the way I do and nobody else does?' and I had to figure that out, I wish more people would talk about therapy.</p>
+									</div>
+									<div class="test_info d-flex flex-row align-items-center justify-content-center">
+										<div class="test_image"><img src="static/selena.jpg" alt=""></div>
+										<div class="test_text">Selena Gomez, <span>Actor</span></div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Slide -->
+							<div class="owl-item">
+								<div class="test_item text-center">
+									<div class="test_text">
+										<p>Not only was I accepting some tough personal stuff, but I just was in a funk. Mostly, I felt like I was not a good mom. I read several articles that said postpartum emotions can last up to 3 years if not dealt with. I like communication best. Talking things through with my mom, my sisters, my friends let me know that my feelings are totally normal. It’s totally normal to feel like I’m not doing enough for my baby."</p>
+									</div>
+									<div class="test_info d-flex flex-row align-items-center justify-content-center">
+										<div class="test_image"><img src="static/serena.jpg" alt=""></div>
+										<div class="test_text">Serena Williams, <span>Tennis player</span></div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Slide -->
+							<div class="owl-item">
+								<div class="test_item text-center">
+									<div class="test_text">
+										<p>I was doing the same thing every night and numbing myself to sleep, the same routine. Couldn't wait to get home and hide out. But that feeling of unease was growing and one night I just said, "This is a waste".</p>
+									</div>
+									<div class="test_info d-flex flex-row align-items-center justify-content-center">
+										<div class="test_image"><img src="static/brad.jpg" alt=""></div>
+										<div class="test_text">Brad Pitt, <span>Actor</span></div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Call to action -->
+
+	<div class="cta">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="cta_container d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start">
+						<div class="cta_content">
+							<div class="cta_title">Assessment</div>
+							<div class="cta_text">Attempt this assessment to know more about what you feel</div>
+						</div>
+						<div class="cta_phone ml-lg-auto"><a href="{{ url_for('quiz') }}">Start Assessment</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Team -->
+
+	<div class="team">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title_container text-center">
+						<div class="section_subtitle">Let's read!</div>
+						<div class="section_title"><h2>BLOGS</h2></div>
+					</div>
+				</div>
+			</div>
+			<div class="row team_row">
+				
+				<!-- Team Item -->
+				<div class="col-lg-4 team_col">
+					<div class="team_item text-center d-flex flex-column aling-items-center justify-content-end">
+						<div class="team_image"><img src="static/blog1.jpg" alt=""></div>
+						<div class="team_content text-center">
+							<div class="team_name"><a href="https://www.blurtitout.org/2021/05/06/what-i-mean-when-i-say-i-dont-know-how-i-am/">WHAT I MEAN WHEN I SAY I DON’T KNOW HOW I AM</a></div>
+							<div class="team_title">Blurt Team</div>
+							<div class="team_text">
+								<p style="text-align: justify;">“How are you?” is a question many of us are familiar with. It’s probably the question we get asked more often than any other. Many of us automatically respond with ‘fine thanks, you?’, because that’s the response we’ve learned to give. It’s the response we heard the adults around us trot out each time they…</p>
+							</div><br>
+							<div class="button button_1 extra_link trans_200"><a href="https://www.blurtitout.org/2021/05/06/what-i-mean-when-i-say-i-dont-know-how-i-am/">read more</a></div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Team Item -->
+				<div class="col-lg-4 team_col">
+					<div class="team_item text-center d-flex flex-column aling-items-center justify-content-end">
+						<div class="team_image"><img src="static/blog2.jpg" alt=""></div>
+						<div class="team_content text-center">
+							<div class="team_name"><a href="https://www.blurtitout.org/2021/04/08/coping-bad-mental-health-days-live-alone/">COPING WITH BAD MENTAL HEALTH DAYS WHEN WE LIVE ALONE</a></div>
+							<div class="team_title">Naomi Barrow</div>
+							<div class="team_text">
+								<p style="text-align: justify;">Those of us who live alone face some unique challenges when it comes to coping with bad mental health days. We don’t have the option of asking a partner to sort the dishwasher for us, or asking a housemate if they’d mind making us a cuppa. However, there are things we can do to make…</p>
+							</div><br>
+							<div class="button button_1 extra_link trans_200"><a href="https://www.blurtitout.org/2021/04/08/coping-bad-mental-health-days-live-alone/">read more</a></div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Team Item -->
+				<div class="col-lg-4 team_col">
+					<div class="team_item text-center d-flex flex-column aling-items-center justify-content-end">
+						<div class="team_image"><img src="static/blog3.jpg" alt=""></div>
+						<div class="team_content text-center">
+							<div class="team_name"><a href="https://www.blurtitout.org/2021/03/11/8-ways-emotionally-support-depression/">8 WAYS TO EMOTIONALLY SUPPORT SOMEONE WITH DEPRESSION</a></div>
+							<div class="team_title">Blurt Team</div>
+							<div class="team_text">
+								<p style="text-align: justify;">When a loved one has depression, it’s sometimes hard to know what we can do to help them. Alongside practical support, emotional support can be vital. The problem is, we might be worried or scared of saying the wrong thing or have no idea what to do. Perhaps we think we’re not qualified to offer…</p>
+							</div><br>
+							<div class="button button_1 extra_link trans_200"><a href="https://www.blurtitout.org/2021/03/11/8-ways-emotionally-support-depression/">read more</a></div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+<!--Books-->
+
+	<div class="team">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title_container text-center">
+						<div class="section_subtitle">“We read to know we’re not alone.”</div>
+						<div class="section_title"><h2>BOOKS</h2></div>
+					</div>
+				</div>
+			</div>
+			<div class="row team_row">
+				
+				<!-- Team Item -->
+				<div class="col-lg-4 team_col">
+					<div class="team_item text-center d-flex flex-column aling-items-center justify-content-end">
+						<div class="team_image"><img src="static/book1.jpg" alt=""></div>
+						<div class="team_content text-center">
+							<div class="team_name"><a href="#">The Noonday Demon: An Atlas of Depression</a></div>
+							<div class="team_title">Andrew Solomon</div>
+							<div class="team_text">
+								<p style="text-align: justify;">Solomon calls his book “An Atlas of Depression”. This is everything you would ever want to know about depression—the personal experience of it, the medical experience of it, the pharmacological treatments, the history of it, the cultural interpretations of it, and of course, Solomon’s own struggles with it. </p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Team Item -->
+				<div class="col-lg-4 team_col">
+					<div class="team_item text-center d-flex flex-column aling-items-center justify-content-end">
+						<div class="team_image"><img src="static/book2.jpg" alt=""></div>
+						<div class="team_content text-center">
+							<div class="team_name"><a href="#">Feeling Good: The New Mood Therapy</a></div>
+							<div class="team_title">David Burns</div>
+							<div class="team_text">
+								<p style="text-align: justify;">“This is what three months with a CBT therapist would be like,” book, full of enough exercises to fill a small notebook, you’d have Feeling Good. Burns has done a fantastic job of essentially writing the closest replacement to a real therapist.If anyone needs a therapist, this book is the best recommendation.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Team Item -->
+				<div class="col-lg-4 team_col">
+					<div class="team_item text-center d-flex flex-column aling-items-center justify-content-end">
+						<div class="team_image"><img src="static/book3.jpg" alt=""></div>
+						<div class="team_content text-center">
+							<div class="team_name"><a href="#">Self-Compassion: The Proven Power of Being Kind to Yourself</a></div>
+							<div class="team_title">Kristin Neff</div>
+							<div class="team_text">
+								<p style="text-align: justify;">Self-compassion gives you the answer and the how-to for every time you’ve ever heard someone say, “hey, don’t be so hard on yourself.” In this book, Neff proposes self-compassion as a more effective measurement of psychological health and did the research into how we get there.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Newsletter -->
+
+	<!-- <div class="newsletter">
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/newsletter.jpg" data-speed="0.8"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<div class="newsletter_title">Subscribe to our newsletter</div>
+				</div>
+			</div>
+			<div class="row newsletter_row">
+				<div class="col-lg-8 offset-lg-2">
+					<div class="newsletter_form_container">
+						<form action="#" id="newsleter_form" class="newsletter_form">
+							<input type="email" class="newsletter_input" placeholder="Your E-mail" required="required">
+							<button class="newsletter_button">subscribe</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="footer_content">
+			<div class="container">
+				<div class="row">
+
+					<!-- Footer About -->
+					<div class="col-lg-3 footer_col">
+						<div class="footer_about">
+							<div class="footer_logo">
+								<a href="{{ url_for('index') }}">
+									<div><span>LET IT GO</span></div>
+									<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Let's fight Depression!</div>
+								</a>
+							</div>
+							<div class="footer_about_text">
+								<p style="text-align: justify;">Sometimes, life will kick you around, but sooner or later, you realize you’re not just a survivor. You’re a warrior, and you’re stronger than anything life throws your way.</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Footer Contact Info -->
+					<div class="col-lg-3 footer_col">
+						<div class="footer_contact">
+							<div class="footer_title">Helpline</div>
+							<ul class="contact_list">
+								<li>011 4119 8666</li>
+								<li>080 2572 2573</li>
+								<li>080 2365 5557</li>
+								<li>011 2338 9090</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Footer Locations -->
+					<div class="col-lg-3 footer_col">
+						<div class="footer_location">
+							<div class="footer_title">Online Support</div>
+							<ul class="locations_list">
+								<li>
+									<a href="http://www.seraniti.com/" onMouseOver="this.style.color='#57ccc3'"onMouseOut="this.style.color='#878787'" ><div class="location_title">Seraniti</div></a>
+									
+								</li>
+								<li>
+									<a href="https://www.hopenetwork.in/" onMouseOver="this.style.color='#57ccc3'"onMouseOut="this.style.color='#878787'" ><div class="location_title">Hope Network</div></a>
+									
+								</li>
+								<li>
+									<a href="https://www.7cups.com/?correlationId=ae973b38-6a0a-47b6-a0e8-e6dbcf81a36c" onMouseOver="this.style.color='#57ccc3'"onMouseOut="this.style.color='#878787'" ><div class="location_title">7 Cups</div></a>
+									
+								</li>
+								<li>
+									<a href="https://www.dbsalliance.org/support/chapters-and-support-groups/online-support-groups/" onMouseOver="this.style.color='#57ccc3'"onMouseOut="this.style.color='#878787'" ><div class="location_title">DBSA</div></a>
+									
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Footer Opening Hours -->
+					<!-- <div class="col-lg-3 footer_col">
+						<div class="opening_hours">
+							<div class="footer_title">Opening Hours</div>
+							<ul class="opening_hours_list">
+								<li class="d-flex flex-row align-items-start justify-content-start">
+									<div>Monday:</div>
+									<div class="ml-auto">8:00am - 9:00pm</div>
+								</li>
+								<li class="d-flex flex-row align-items-start justify-content-start">
+									<div>Thuesday:</div>
+									<div class="ml-auto">8:00am - 9:00pm</div>
+								</li>
+								<li class="d-flex flex-row align-items-start justify-content-start">
+									<div>Wednesday:</div>
+									<div class="ml-auto">8:00am - 9:00pm</div>
+								</li>
+								<li class="d-flex flex-row align-items-start justify-content-start">
+									<div>Thursday:</div>
+									<div class="ml-auto">8:00am - 9:00pm</div>
+								</li>
+								<li class="d-flex flex-row align-items-start justify-content-start">
+									<div>Friday:</div>
+									<div class="ml-auto">8:00am - 7:00pm</div>
+								</li>
+							</ul>
+						</div>
+					</div> -->
+
+				</div>
+			</div>
+		</div>
+		<!-- <div class="footer_bar">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="footer_bar_content  d-flex flex-md-row flex-column align-items-md-center justify-content-start">
+							<div class="copyright"> --><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+<!-- </div>
+							<nav class="footer_nav ml-md-auto">
+								<ul class="d-flex flex-row align-items-center justify-content-start">
+									<li><a href="index.html">Home</a></li>
+									<li><a href="about.html">About us</a></li>
+									<li><a href="services.html">Services</a></li>
+									<li><a href="blog.html">News</a></li>
+									<li><a href="contact.html">Contact</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div> -->
+	</footer>
+</div>
+
+<script src="{{ url_for('static', filename='styles/bootstrap-4.1.2/popper.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+<script src="{{ url_for('static', filename='styles/bootstrap-4.1.2/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/greensock/TweenMax.min.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/greensock/TimelineMax.min.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/scrollmagic/ScrollMagic.min.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/greensock/animation.gsap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/greensock/ScrollToPlugin.min.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/OwlCarousel2-2.2.1/owl.carousel.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/easing/easing.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/parallax-js-master/parallax.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/about.js') }}"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>
